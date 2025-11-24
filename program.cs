@@ -17,7 +17,7 @@ class Program {
       string outgoingNumber = config["Twilio:PhoneNumber"];
 
       TwilioClient.Init(accountSid, authToken);
-      var url = new Uri("https://wisteria-mandrill-7217.twil.io/assets/magical-sound-effect-7137.mp3");
+      var url = new Uri("ASSET_URL");
 
       var call = await CallResource.CreateAsync(
           twiml: new Twilio.Types.Twiml("<Response><Play>" + url + "</Play></Response>"),
